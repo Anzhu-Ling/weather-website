@@ -1,0 +1,429 @@
+
+.sideDisplay{
+    position: fixed;
+    height: 100%;
+    width: 20vmax;
+    left: 0;
+    top: 0;
+    background-color: aliceblue;
+}
+.title{
+    position: absolute;
+    height: 10vmax;
+    width: 100%;
+    background-color: #4d79ff;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    font-size: 3vmax; 
+    color: white;
+    text-align: center;
+    font-family: Mukta
+}
+.titleText{
+    position: absolute;
+    background-color: #4d79ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+.navigation{
+    position: absolute;
+    width: 100%;
+    height: 3vmax;
+    left: 0;
+    top: 10vmax;
+    text-align: center;
+    font-size: 1.5vmax;
+    color: white;
+    font-family: Mukta
+}
+button{
+    position: relative;
+    float: left;
+    width: 33.333333%;
+    height: 2vmax;
+    border-radius: 5px;
+    border: solid white 1px;
+    background-color: powderblue;
+    font-size: 1vmax;
+    color: #595959;
+    font-family: Mukta;
+    text-align: center;
+    line-height: 0;
+    cursor: pointer;
+    outline: white;
+}
+.active button{
+    background-color: gold;
+    height: 2vmax;
+    color: white
+}
+
+.displayMiddle{
+    position: absolute;
+    width: 20vmax;
+    height: 40vmax;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -25%);
+    z-index: 1;
+}
+
+.graphic{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url('/assets/Asset 3.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate{
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.currentDisplay{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    z-index: 1;
+
+}
+
+.cDText{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    font-size: 1vmax;
+    font-family: Mukta;
+    font-weight: normal;
+    color:  #595959;
+}
+
+.cDText2{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    font-size: 1vmax;
+    font-family: Mukta;
+    font-weight: normal;
+    color:  #595959;
+}
+
+.cDText3{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    font-size: 1vmax;
+    font-family: Mukta;
+    font-weight: normal;
+    color:  #595959;
+}
+
+
+.cDText4{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    font-size: 1vmax;
+    font-family: Mukta;
+    font-weight: normal;
+    color:  #595959;
+}
+
+
+.cDText5{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 80%;
+    font-size: 1vmax;
+    font-family: Mukta;
+    font-weight: normal;
+    color:  #595959;
+}
+
+.paragraph{
+    position: fixed;
+    background-color: aliceblue;
+    height: 100%;
+    width: 50vmax;
+    top: 50%;
+    left: 20vmax;
+    transform: translate(0,-50%);
+}
+.help{
+    position: absolute;
+    color: #595959;
+    width: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1vmax;
+    font-family: Mukta
+
+}
+
+.profile{
+    position: fixed;
+    height: 20vh;
+    width: 20vh;
+    background-image: url('/assets/StarParty.png');
+    background-size: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: yellow;
+    z-index: 8;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 20vmax;
+    height: 3vmax;
+    background-color: powderblue;
+}
+
+.footerP{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    color:#595959;
+    font-family: Mukta;
+    font-size: 0.75vmax;
+}
+
+.notFound{
+    position: fixed;
+    background-color:#ff8a8a;
+    height: 100%;
+    width: 50vmax;
+    top: 50%;
+    left: 20vmax;
+    transform: translate(0,-50%);
+    font-size: 3vmax; 
+    color: white;
+    text-align: center;
+    font-family: Mukta;
+}
+
+.notFoundE{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5vmax;
+    color: #ff4747;
+}
+
+.notFoundP{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5vmax;
+    color: #595959;
+}
+
+/*Index*/
+
+.searchForm{
+    position: fixed;
+    left: 25vmax;
+    top: 10vmax;
+    background-color: aliceblue;
+    font-family: Mukta;
+    color: #595959;
+}
+
+.form{
+    position: absolute;
+}
+
+.lInput{
+    position: absolute;
+    top: 1%;
+    height: 1.5vmax;
+    width: 15vmax;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color:#999999
+
+}
+.lInput:focus{
+    outline-width: 1px;
+    outline-offset: 1px;
+    outline-color: cornflowerblue;
+}
+
+.fname{
+    position: absolute;
+    font-size: 1.2vmax;
+    transform: translate(0,-100%);
+    letter-spacing: 0;
+}
+
+.submit{
+    position: absolute;
+    top: 5%;
+    left: 16vmax;
+    height: 1.5vmax;
+    width: 5vmax;
+    font-family: Mukta;
+    color: #595959;
+    font-size: 1vmax;
+    letter-spacing: 0;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.formButton{
+    position: absolute;
+    top: -1%;
+    left: 16vmax;
+    width: 5vmax;
+    height: 2vmax;
+    border-radius: 5px;
+    border: solid #999999 1px;
+    background-color: white;
+    font-size: 1vmax;
+    color: #595959;
+    font-family: Mukta;
+    text-align: center;
+    line-height: 0;
+    cursor: pointer;
+    outline: white;
+}
+
+.weatherPanel{
+    position: fixed;
+    height: 70%;
+    width: 60%;
+    top: 13vmax;
+    left: 25vmax;
+}
+
+.currentPanel{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    border: solid #999999 1px;
+    border-radius: 5px;
+}
+
+.cL{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 7%;
+    font-size: 2vmax;
+    vertical-align: middle;
+
+}
+
+.city{
+    display: inline-block;
+    position: relative;
+    font-size: 1.5vmax;
+    vertical-align: bottom;
+    text-align: bottom;
+    letter-spacing: 0;
+}
+
+.country{
+    display: inline-block;
+    position: relative;
+    font-size: 1vmax;
+    vertical-align: bottom;
+    text-align: bottom;
+    letter-spacing: 0;
+    top: -10%
+}
+
+
+.cT{
+    position: absolute;
+    top: 15%;
+    font-size: 1vmax;
+    left: 5%;
+}
+.cFL{
+    position: absolute;
+    top: 20%;
+    font-size: 1vmax;
+    left: 5%;
+}
+.cH{
+    position: absolute;
+    top: 25%;
+    font-size: 1vmax;
+    left: 5%;
+}
+.cP{
+    position: absolute;
+    top: 30%;
+    font-size: 1vmax;
+    left: 5%;
+}
+
+.windPanel{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    border: solid #999999 1px;
+    border-radius: 5px;
+}
+
+.compass{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 10vmax;
+    height: 10vmax;
+    transform: translate(-50%,0);
+    background-image: url('/assets/Compass Backdrop.svg');
+    background-size: 100%;
+}
+
+.compassArrow{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 5vmax;
+    height: 10vmax;
+    transform: translate(-50%,0);
+    background-image: url('/assets/Compass arrow.svg');
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s ease-in-out;
+}
+
+.resize .compassArrow{
+    transition: none;
+}

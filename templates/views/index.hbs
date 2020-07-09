@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="/assets/Asset 1.svg">
+        <link rel="mask-icon" href="/assets/Mask-Asset.svg" color="#000000">
+        <link rel="apple-touch-icon" href="/assets/Asset 1.svg">
+        <!--<link rel="icon" href="assets/Asset64x64.png">-->
+        <title>{{title}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href={{font}} rel="stylesheet">
+    </head>
+    <body>
+        {{>header}}
+        {{>footer}}
+        <div class="searchForm">
+        <form class="form" id="form">
+            <label class= "fname">City:</label><br>
+            <input id="lInput" class="lInput"><br>
+            <button class="formButton" id="formButton">Search</button>
+        </form>
+        <div class="weatherPanel">
+            <div class="currentPanel">
+                <div class="cL" id="cL">
+                    <span class="city" id="city">Ready...</span>
+                    <span class="country" id="country"></span>
+                </div>
+                <div class="cT" id="cT">Temperature:</div>
+                <div class="cFL" id="cFL">Feels like:</div>
+                <div class="cH" id="cH">Humidity:</div>
+                <div class="cP" id="cP">Pressure:</div>
+            </div>
+            <div class="windPanel">
+                <div class="compass"></div>
+                <div class="compassArrow" id="compassArrow"></div>
+            </div>
+        </div>
+
+        </div>
+        <script src="/javascript/app.js"></script>
+    </body>
+</html>
