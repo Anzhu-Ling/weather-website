@@ -6,6 +6,8 @@ document.getElementById("form").addEventListener('submit', (e)=>{
     console.log("Prevented refresh")
 })
 
+console.log("hello")
+
 let resizeTimer;
 window.addEventListener("resize", () => {
   document.body.classList.add("resize");
