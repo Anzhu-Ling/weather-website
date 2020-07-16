@@ -30,7 +30,8 @@ const Get = (location, callback) => {
     document.getElementById("cH").textContent = `Humidity: `;
     document.getElementById("cP").textContent = `Pressure: `;
     console.log(`http://localhost:3000/weather/?location=${location}`)
-    fetch(`http://localhost:3000/weather/?location=${location}`).then((response)=>{
+
+    fetch(`/weather/?location=${location}`).then((response)=>{
     response.json().then((data)=>{
         if (data.error){
             console.log(`error: ${data.error}`)
