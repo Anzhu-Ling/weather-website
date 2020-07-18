@@ -1,5 +1,6 @@
 //import { addListener } from "cluster";
 
+console.log("hahahah")
 
 document.getElementById("form").addEventListener('submit', (e)=>{
     e.preventDefault();
